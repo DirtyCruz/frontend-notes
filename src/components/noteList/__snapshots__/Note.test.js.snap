@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Note component renders Note 1`] = `
+<Fragment>
+  <h4>
+    title
+  </h4>
+  <p>
+    body
+  </p>
+</Fragment>
+`;
