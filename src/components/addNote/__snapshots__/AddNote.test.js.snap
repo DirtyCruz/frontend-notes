@@ -4,13 +4,19 @@ exports[`AddNote component renders AddNote 1`] = `
 <Fragment>
   <input
     name="title"
+    onChange={[Function]}
     type="text"
+    value="title"
   />
   <input
     name="body"
+    onChange={[Function]}
     type="text"
+    value="body"
   />
-  <button>
+  <button
+    onClick={[Function]}
+  >
     Create Note
   </button>
 </Fragment>
