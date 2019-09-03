@@ -6,7 +6,7 @@ function AddNote({ title, handleOnChange, body, handleClick }) {
     <>
       <input type='text' name='title' value={title} onChange={handleOnChange} />
       <input type='text' name='body' value={body} onChange={handleOnChange} />
-      <button onClick={handleClick}>Create Note</button>
+      <button onClick={() => handleClick(title, body)}>Create Note</button>
     </>
   );
 }

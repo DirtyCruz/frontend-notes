@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import AddNote from '../components/addNote/AddNote';
 import { getTitle, getBody } from '../selectors/addNoteSelectors';
-import { updateTitle, updateBody } from '../actions/addNoteActions'
+import { updateTitle, updateBody, makeNote } from '../actions/addNoteActions'
 
 const mapStateToProps = state => ({
   title: getTitle(state),
@@ -13,6 +13,9 @@ const mapDispatchToProps = dispatch => ({
     target.name === 'title' ? 
       dispatch(updateTitle(target.value)) :
       dispatch(updateBody(target.value));
+  },
+  handleClick(title, body) {
+    dispatch(makeNote(title, body));
   }
 });
 
