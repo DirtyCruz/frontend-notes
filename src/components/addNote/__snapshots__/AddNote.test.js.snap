@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddNote component renders AddNote 1`] = `
+<Fragment>
+  <input
+    name="title"
+    type="text"
+  />
+  <input
+    name="body"
+    type="text"
+  />
+  <button>
+    Create Note
+  </button>
+</Fragment>
+`;
