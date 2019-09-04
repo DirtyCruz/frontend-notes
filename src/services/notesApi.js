@@ -11,3 +11,16 @@ export const createNote = (title, body) => {
       return res.json();
     });
 };
+
+export const getNotes = () => {
+  return fetch('https://dirty-cruz.herokuapp.com/api/v1/notes', {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  })
+    .then(res => {
+      if(!res.ok) throw 'unable to fetch route';
+      return res.json();
+    });
+};
