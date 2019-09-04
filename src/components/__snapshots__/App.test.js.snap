@@ -3,6 +3,6 @@
 exports[`App component renders App 1`] = `
 <Fragment>
   <Connect(AddNote) />
-  <Connect(Notes) />
+  <Connect(ViewNotes) />
 </Fragment>
 `;
